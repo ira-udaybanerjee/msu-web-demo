@@ -1,0 +1,4 @@
+flask
+mssql-python
+gunicorn
+python-dotenv

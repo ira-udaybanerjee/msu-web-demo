@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visitor Records</title>
+</head>
+<body>
+    <h1>Saved Visitor Records</h1>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Purpose</th>
+            <th>Created At</th>
+        </tr>
+        {% for visitor in visitors %}
+        <tr>
+            <td>{{ visitor[0] }}</td>
+            <td>{{ visitor[1] }}</td>
+            <td>{{ visitor[2] }}</td>
+            <td>{{ visitor[3] }}</td>
+            <td>{{ visitor[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>
